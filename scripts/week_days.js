@@ -88,7 +88,6 @@ function nextDay (){
 //     }
 // }
 
-
 function toggle(sDivId){
     var oDiv = document.getElementById(sDivId);
     oDiv.style.display = (oDiv.style.display == "block") ? "none" : "block";
