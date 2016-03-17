@@ -19,11 +19,8 @@ MathExercise.prototype.prepareData = function (){
 
 
 MathExercise.prototype.deleteImages = function (){
-    while (this.imgs.length > 0){
-        var imgId = this.imgs.pop();
-        var img = document.getElementById(imgId);
-        img.parentNode.removeChild(img);
-    }
+    this.imgs.map(function (imgId) {var img = document.getElementById(imgId); img.parentNode.removeChild(img);});
+    this.imgs = [];
 }
 
 
@@ -108,9 +105,7 @@ MathExercise.prototype.appendResultsToStats = function (stats){
 
 
 MathExercise.prototype.getStats = function (){
-    for(var i = 0; i < this.stats.length; i++){
-        console.log("# " + i + " " + this.stats[i].exercise + " " + this.stats[i].expectedAnswer + " " + this.stats[i].answer + " " + this.stats[i].correct);
-    }
+    this.stats.map(function (s) {console.log("# " + this.stats.index(i) + " " + s.exercise + " " + s.expectedAnswer + " " + s.answer + " " + s.correct);});
 }
 
 
