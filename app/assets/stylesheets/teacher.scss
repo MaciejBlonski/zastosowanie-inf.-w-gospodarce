@@ -1,0 +1,30 @@
+// Place all the styles related to the teacher controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+//**********************index**************************
+#title{
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+#kreska{
+  color: black;
+  background: black;
+  width: 75%;
+  height: 5px;
+}
+#index{
+  background-color:#4169E1;
+}
+#stopka{
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  display: inline;
+}
+
+//**********************index**************************

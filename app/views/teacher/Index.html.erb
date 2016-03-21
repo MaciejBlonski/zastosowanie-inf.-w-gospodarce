@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wspomaganie nauczania wczesnoszgolego</title>
+
+</head>
+<body id="index">
+<br/></br>
+  <div id="title">
+    <b>Wspomaganie Nauczania</b>
+  </div>
+  <hr id="kreska">
+</br>
+
+  <div class="col-xs-8" >
+  </div>
+  <dic class="col-xs-4">
+
+    <%= form_tag( :method => "get") do %>
+
+    Zaloguj jako:
+    <select name="nazwa">
+		<option>Nauczyciel</option>
+		<option>Opiekun</option>
+		<option>Uczeń</option>
+	</select></br></br>
+
+    Login: <input ></br></br>
+    Hasło: <input> </br></br>
+    <button type="submit" id="loguj"  style=" width:95px; height:25px;"><%=  'Zaloguj się' %></button>
+
+    <%end%>
+
+  </div>
+<hr id="kreska" style="width: 50%; height:2px;">
+</br></br></br>
+
+<div id="stopka">
+<div  style="background-color:#4169E1; width: 240px" > Kontakt <a href="http://www.akond.com/" ></a></div>
+  <div  style="background-color:#4169E1; width: 240px" >polityka prywatności <a href="http://www.akond.com/" ></a></div>
+  pomoc <a href="http://www.akond.com/"></a>
+
+</div>
+</body>
+</html>
