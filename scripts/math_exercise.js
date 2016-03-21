@@ -79,12 +79,31 @@ MathExercise.prototype.nextExercise = function (){
 
 MathExercise.prototype.checkAndSaveAnswer = function (answer){
     var expectedAnswer = this.getExpectedAnswer();
-    var info = {exercise: this.number1 + " " + this.sign + " " + this.number2,
+    var stats = {exercise: this.number1 + " " + this.sign + " " + this.number2,
                 expectedAnswer: expectedAnswer,
                 answer: answer,
                 correct: answer == expectedAnswer};
-    this.stats.push(info);
+    this.stats.push(stats);
+    this.appendResultsToStats(stats);
     document.getElementById("answer").value = "";
+}
+
+
+MathExercise.prototype.appendResultsToStats = function (stats){
+    var tableRef = document.getElementById('statsTable')
+    var newRow   = tableRef.insertRow(tableRef.rows.length);
+    var newCell  = newRow.insertCell(0);
+    newCell.appendChild(document.createTextNode(stats.expectedAnswer));
+    newCell  = newRow.insertCell(0);
+    newCell.appendChild(document.createTextNode(stats.answer));
+    newCell  = newRow.insertCell(0);
+    newCell.appendChild(document.createTextNode(stats.exercise));
+    newCell  = newRow.insertCell(0);
+    newCell.appendChild(document.createTextNode(tableRef.rows.length-1));
+    newCell  = newRow.insertCell(0);
+    var img = new Image();
+    newCell.appendChild(img);
+    img.src = "../imgs/signs/" + (stats.correct ? "good": "wrong") + ".png";
 }
 
 
@@ -93,3 +112,13 @@ MathExercise.prototype.getStats = function (){
         console.log("# " + i + " " + this.stats[i].exercise + " " + this.stats[i].expectedAnswer + " " + this.stats[i].answer + " " + this.stats[i].correct);
     }
 }
+
+
+function toggle(sDivId){
+    var oDiv = document.getElementById(sDivId);
+    oDiv.style.display = (oDiv.style.display == "block") ? "none" : "block";
+}
+
+window.onload = function(){
+    toggle("statsTable");
+};
