@@ -1,4 +1,19 @@
 Rails.application.routes.draw do
+
+  root 'logowanie#index'
+
+  get 'parents/index'
+
+  get 'parents/oceny'
+
+  get 'parents/statystyki'
+
+  get 'parents/profil'
+
+  get 'parents/poczta'
+
+  get 'logowanie/index'
+
   get 'teacher/Index'
 
   get 'teacher/dodaj'

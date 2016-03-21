@@ -1,45 +1,98 @@
-<!DOCTYPE html>
-<html>
+
+
 <head>
-  <title>Wspomaganie nauczania wczesnoszgolego</title>
+  <title>Nauczyciel</title>
 
 </head>
+
 <body id="index">
-<br/></br>
-  <div id="title">
-    <b>Wspomaganie Nauczania</b>
+</br></br>
+  <div id="menu" >
+    Zalogowany jako: ....
+    <a href="http://google.pl/" style="color: white; text-decoration: none;"> Wyloguj </a>
+  </br>
   </div>
-  <hr id="kreska">
-</br>
+    <hr >
 
-  <div class="col-xs-8" >
-  </div>
-  <dic class="col-xs-4">
-
-    <%= form_tag( :method => "get") do %>
-
-    Zaloguj jako:
-    <select name="nazwa">
-		<option>Nauczyciel</option>
-		<option>Opiekun</option>
-		<option>Uczeń</option>
-	</select></br></br>
-
-    Login: <input ></br></br>
-    Hasło: <input> </br></br>
-    <button type="submit" id="loguj"  style=" width:95px; height:25px;"><%=  'Zaloguj się' %></button>
-
-    <%end%>
-
-  </div>
-<hr id="kreska" style="width: 50%; height:2px;">
+    <ol class="breadcrumb" style="max-width: 75%">
+      <li><a href="/teacher/Index">Sprawy organizacyjna</a></li>
+      <li><a href="/teacher/oceny">Oceny</a></li>
+      <li><a href="/teacher/statystyki">Statystyki</a></li>
+      <li><a href="/teacher/dodaj">Dodaj ucznia</a></li>
+      <li><a href="/teacher/profil">Profil</a></li>
+      <li><a href="/teacher/poczta">Poczta</a></li>
+    </ol>
 </br></br></br>
 
-<div id="stopka">
-<div  style="background-color:#4169E1; width: 240px" > Kontakt <a href="http://www.akond.com/" ></a></div>
-  <div  style="background-color:#4169E1; width: 240px" >polityka prywatności <a href="http://www.akond.com/" ></a></div>
-  pomoc <a href="http://www.akond.com/"></a>
+<div class="col-xs-6" >
+<div style="color:white">  Nadchodzące wydarzenia:</div>
+  </br></br>
+  <div id="kalendarz" class='datepicker' ></div>
+  </div>
+
+
+<div class="col-xs-6" >
+
+  <table class="table table-condensed" id="tabela">
+    <thead>
+      <tr>
+        <th>Data</th>
+        <th>Wydarzenie</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>15.12.2016</td>
+        <td>Zebranie</td>
+
+      </tr>
+      <tr>
+        <td>15.12.2016</td>
+        <td>Zebranie</td>
+
+      </tr>
+      <tr>
+        <td>15.12.2016</td>
+        <td>Zebranie</td>
+
+      </tr>
+    </tbody>
+  </table>
+
 
 </div>
+
+</br></br></br>
+
+<div class="col-xs-12" >
+</br></br></br>
+<div style="color:white">  Utworz wydarzenie:</div>
+  </br></br>
+
+  <div class="input-append date ">
+  <input type="text" class="span2"><span class="add-on"><i class="icon-th"></i></span>
+</div>
+</br></br>
+
+<div style="color:white">  Treść:</div>
+<textarea rows="4" cols="50">
+
+</textarea>
+</br></br>
+<button type="button" class="btn btn-default">Dodaj</button>
+</div>
+
 </body>
-</html>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.datepicker').datepicker();
+
+    $('.input-append.date').datepicker({
+    language: "pl",
+    orientation: "bottom left",
+    keyboardNavigation: false,
+    forceParse: false
+});
+  });
+</script>

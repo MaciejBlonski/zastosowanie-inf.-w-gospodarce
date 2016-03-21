@@ -6,25 +6,22 @@
 @import "bootstrap";
 
 //**********************index**************************
-#title{
-  font-size: 30px;
-  color: white;
-  text-align: center;
-}
-#kreska{
-  color: black;
-  background: black;
-  width: 75%;
-  height: 5px;
-}
+
 #index{
   background-color:#4169E1;
 }
-#stopka{
-  font-size: 15px;
-  color: white;
-  text-align: center;
+
+#menu{
+  float:right;
   display: inline;
+  color: white;
+  text-decoration: none;
 }
 
+.datepicker .datepicker-inline{
+  background-color: white;
+}
+#tabela{
+  background-color: white;
+}
 //**********************index**************************
