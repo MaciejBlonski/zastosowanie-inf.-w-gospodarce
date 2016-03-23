@@ -17,6 +17,6 @@ class TeacherController < ApplicationController
   def statystyki
   end
 
-  def organizacjia
+  def organization
   end
 end

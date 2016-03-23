@@ -1,7 +1,8 @@
 class LogowanieController < ApplicationController
   def index
-    logowanie=params[:name]
-    if logowanie=='Nauczyciel'
+
+    logowanie=params[:zaloguj]
+    if logowanie=='zaloguj'
       render 'teacher/Index'
     elsif logowanie=='Opiekun'
       render 'parents/index'

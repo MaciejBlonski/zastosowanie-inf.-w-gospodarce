@@ -1,35 +1,74 @@
 
 <head>
-  <title>Oveny</title>
+  <title>Oceny</title>
 
 </head>
 
 <body id="index">
-</br></br>
-  <div id="menu" >
-    Zalogowany jako: ....
-    <a href="http://google.pl/" style="color: white; text-decoration: none;"> Wyloguj </a>
-  </br>
-  </div>
-    <hr >
 
-    <ol class="breadcrumb" style="max-width: 75%">
-      <li><a href="/teacher/Index">Sprawy organizacyjna</a></li>
-      <li><a href="/teacher/oceny">Oceny</a></li>
-      <li><a href="/teacher/statystyki">Statystyki</a></li>
-      <li><a href="/teacher/dodaj">Dodaj ucznia</a></li>
-      <li><a href="/teacher/profil">Profil</a></li>
-      <li><a href="/teacher/poczta">Poczta</a></li>
-    </ol>
-</br></br></br>
+  <div class="navbar-wrapper">
+      <div class="container-fluid">
+          <nav class="navbar navbar-fixed-top">
+              <div class="container">
+                  <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#">Logo</a>
+                  </div>
+
+                  <div id="navbar" class="navbar-collapse collapse">
+                      <ul class="nav navbar-nav">
+                          <li ><a href="/teacher/organization" class="">Home</a></li>
+                          <li class="active"><a href="/teacher/oceny">Oceny</a></li>
+                          <li><a href="/teacher/statystyki">Statystyki</a></li>
+                          <li><a href="/teacher/profil">Profil</a></li>
+                          <li><a href="/teacher/poczta">Poczta</a></li>
+                      </ul>
+                      <ul class="nav navbar-nav pull-right">
+
+                          <li><a>  Zalogowany jako: ....</a></li>
+                          <li class=""><a href="http://google.pl/" > Wyloguj </a></li>
+
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+      </div>
+  </div>
+</br></br></br></br></br></br>
+
+
+<div class="form-group">
+ <label for="sel1">Klasa:</label>
+ <select class="form-control" id="sel1">
+   <option>1A</option>
+   <option>2A</option>
+   <option>3F</option>
+
+ </select>
+</div>
 
 <div class="form-group">
  <label for="sel1">Przeglądaj dla:</label>
  <select class="form-control" id="sel1">
-   <option>1</option>
-   <option>2</option>
-   <option>3</option>
-   <option>4</option>
+   <option>Jan  Kochanek</option>
+   <option>Marian Szatan</option>
+   <option>Joanna Piskuta</option>
+
+ </select>
+</div>
+
+<div class="form-group">
+ <label for="sel1">Przeglądaj dla:</label>
+ <select class="form-control" id="sel1">
+   <option>Polski</option>
+   <option>Przyroda</option>
+   <option>Matematyka</option>
+
  </select>
 </div>
 
@@ -38,6 +77,7 @@
     <tr>
       <th>Data</th>
       <th>Przedmiot</th>
+      <th>Waga</th>
       <th>Punkty</th>
       <th>Ocena</th>
     </tr>
@@ -46,6 +86,7 @@
     <tr>
       <td>15.12.2016</td>
       <td>Polski</td>
+      <td>Spr</td>
         <td>50/50</td>
           <td>6</td>
 
@@ -53,6 +94,7 @@
     <tr>
       <td>15.12.2016</td>
       <td>Polski</td>
+      <td>odp</td>
         <td>50/50</td>
           <td>6</td>
 
@@ -60,10 +102,14 @@
     <tr>
       <td>15.12.2016</td>
       <td>Polski</td>
+      <td>zadanie domowe</td>
         <td>50/50</td>
           <td>6</td>
 
     </tr>
   </tbody>
 </table>
+
+<button type="button" class="btn btn-default">Dodaj ocene</button>
+
 </body>

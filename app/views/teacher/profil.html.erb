@@ -4,20 +4,88 @@
 </head>
 
 <body id="index">
-</br></br>
-  <div id="menu" >
-    Zalogowany jako: ....
-    <a href="http://google.pl/" style="color: white; text-decoration: none;"> Wyloguj </a>
-  </br>
-  </div>
-    <hr >
+  <div class="navbar-wrapper">
+      <div class="container-fluid">
+          <nav class="navbar navbar-fixed-top">
+              <div class="container">
+                  <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#">Logo</a>
+                  </div>
 
-    <ol class="breadcrumb" style="max-width: 75%">
-      <li><a href="/teacher/Index">Sprawy organizacyjna</a></li>
-      <li><a href="/teacher/oceny">Oceny</a></li>
-      <li><a href="/teacher/statystyki">Statystyki</a></li>
-      <li><a href="/teacher/dodaj">Dodaj ucznia</a></li>
-      <li><a href="/teacher/profil">Profil</a></li>
-      <li><a href="/teacher/poczta">Poczta</a></li>
-    </ol>
-</br></br></br>
+                  <div id="navbar" class="navbar-collapse collapse">
+                      <ul class="nav navbar-nav">
+                          <li ><a href="/teacher/organization" class="">Home</a></li>
+                          <li><a href="/teacher/oceny">Oceny</a></li>
+                          <li><a href="/teacher/statystyki">Statystyki</a></li>
+                          <li class="active"><a href="/teacher/profil">Profil</a></li>
+                          <li><a href="/teacher/poczta">Poczta</a></li>
+                      </ul>
+                      <ul class="nav navbar-nav pull-right">
+
+                          <li><a>  Zalogowany jako: ....</a></li>
+                          <li class=""><a href="http://google.pl/" > Wyloguj </a></li>
+
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+      </div>
+  </div>
+  </br></br></br></br></br></br>
+
+
+
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+              <div class="panel panel-info">
+              <div class="panel-body">
+                <div class="row text-center">
+                  <div class="col-md-4"> <img alt="User Pic" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=100" class="img-circle"> </div>
+                  <div class=" col-md-8"><h3>Katarzyna Żołądek</h3></div>
+                </div>
+                <br>
+                <div class="row text-center">
+                    <table class="table table-bordered table-striped table-hover">
+                      <tbody>
+                      <tr>
+                          <td>Date of Birth:</td>
+                          <td>01/24/1988</td>
+                        </tr>
+                          <tr>
+                          <td>Gender</td>
+                          <td>Male</td>
+                        </tr>
+                        <tr>
+                          <td>Email</td>
+                          <td><a href="mailto:info@support.com">Kżołądź@gmail.com</a></td>
+                        </tr>
+                          <td>Numer telefonu</td>
+                          <td>
+                          <ul class="phone">
+                              <li>123-4567-890(Landline)</li>
+                              <li>555-4567-890(Mobile)</li>
+                          </ul>
+                          </td>
+
+                        </tr>
+
+                      </tbody>
+                    </table>
+                </div>
+              </div>
+                   <div class="panel-footer">
+                      <a href="edit.html" data-original-title="Edit" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></a>
+                  </div>
+
+            </div>
+          </div>
+
+
+
+</body>
