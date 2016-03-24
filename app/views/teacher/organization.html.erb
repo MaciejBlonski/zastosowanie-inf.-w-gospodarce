@@ -1,0 +1,221 @@
+
+
+<head>
+  <title>Nauczyciel</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body id="index">
+</br></br>
+
+
+    <div class="navbar-wrapper">
+        <div class="container-fluid">
+            <nav class="navbar navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Logo</a>
+                    </div>
+
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#" class="">Home</a></li>
+                            <li><a href="/teacher/oceny">Oceny</a></li>
+                            <li><a href="/teacher/statystyki">Statystyki</a></li>
+                            <li><a href="/teacher/profil">Profil</a></li>
+                            <li><a href="/teacher/poczta">Poczta</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav pull-right">
+
+                            <li><a>  Zalogowany jako: ....</a></li>
+                            <li class=""><a href="http://google.pl/" > Wyloguj </a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</br></br></br>
+
+
+
+<div class="col-xs-8" >
+
+
+  <h2 style="color:#79BD9A">Wydarzenia</h2>
+
+      <hr style="color:#0B486B"/>
+      <div class="agenda">
+          <div class="table-responsive">
+              <table class="table table-condensed table-bordered">
+                  <thead>
+                      <tr id="table">
+                          <th >Data</th>
+                          <th>Czas</th>
+                          <th>Wydarzenie</th>
+                          <th>Uwagi</th>
+                          <th>Usuń</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <!-- Single event in a single day -->
+                      <tr id="table">
+                          <td class="agenda-date" class="active" rowspan="1">
+                              <div class="dayofmonth">26</div>
+                              <div class="dayofweek">Saturday</div>
+                              <div class="shortdate text-muted">July, 2014</div>
+
+
+                          </td>
+                          <td class="agenda-time" id="table">
+                              5:30 AM
+                          </td>
+                          <td class="agenda-events" id="table">
+                              <div class="agenda-event">
+                                  <i class="glyphicon glyphicon-repeat text-muted" title="Repeating event"></i>
+                                  Fishing
+                              </div>
+
+                          </td>
+                          <td>
+                            </td>
+                            <td class="agenda-events" id="table">
+                          <a class="btn icon-btn btn-danger" href="#"><span class="glyphicon btn-glyphicon glyphicon-trash img-circle text-danger"></span>Anuluj</a>
+                    </td>
+                      </tr>
+
+                      <!-- Multiple events in a single day (note the rowspan) -->
+                      <tr>
+                          <td class="agenda-date" class="active" id="table"rowspan="3">
+                              <div class="dayofmonth">24</div>
+                              <div class="dayofweek">Thursday</div>
+                              <div class="shortdate text-muted">July, 2014</div>
+                          </td>
+                          <td class="agenda-time" id="table">
+                              8:00 - 9:00 AM
+                          </td>
+                          <td class="agenda-events" id="table">
+                              <div class="agenda-event">
+                                  Doctor's Appointment
+                              </div>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td class="agenda-time" id="table">
+                              10:15 AM - 12:00 PM
+                          </td>
+                          <td class="agenda-events">
+                              <div class="agenda-event" id="table">
+                                  Meeting with executives
+                              </div>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td class="agenda-time" id="table">
+                              7:00 - 9:00 PM
+                          </td>
+                          <td class="agenda-events">
+                              <div class="agenda-event" id="table">
+                                  Aria's dance recital
+                              </div>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+              <button type="button" class="btn icon-btn btn-success pull-right" data-toggle="modal" data-target="#myModal"><span class="glyphicon btn-glyphicon glyphicon-plus img-circle text-success"></span>Dodaj</button>
+
+          </div>
+      </div>
+
+  </div>
+
+
+
+
+  <!-- Modal -->
+<div class="modal fade " id="myModal" role="dialog" >
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header btn-success" style="padding:35px 50px;">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4><span class="glyphicon glyphicon-plus-sign" ></span> Dodaj wydarzenie</h4>
+      </div>
+
+      <div class="modal-body" style="padding:40px 50px;">
+        <form role="form">
+          <div class="form-group">
+            <label for="usrname"><span class="glyphicon glyphicon-calendar"></span> Data</label>
+            <input type="text" class="form-control" data-provide='datepicker' placeholder="Data">
+          </div>
+
+          <div class="form-group">
+            <label for="psw"><span class="glyphicon glyphicon-time"></span> Czas </label>
+            <input type="text" class="form-control" id="psw" placeholder="Czas">
+          </div>
+
+          <div class="form-group">
+            <label for="psw"><span class="glyphicon glyphicon-envelope"></span> Wydarzenie </label>
+            <textarea type="text" class="form-control" id="psw"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="psw"><span class="glyphicon glyphicon-envelope"></span> Uwagi </label>
+            <textarea type="text" class="form-control" id="psw"></textarea>
+          </div>
+
+          <div class="form-group">
+            <div class="bs-docs-example">
+              <label for="psw"><span class="glyphicon glyphicon-envelope"></span> Osoby </label>
+              <select class="selectpicker form-control" multiple="" style="display: none;">
+                <option>Mustard</option>
+                <option>Ketchup</option>
+                <option>Relish</option>
+              </select>
+            </div>
+          </div>
+
+
+            <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-plus"></span> Dodaj</button>
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+
+</body>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.datepicker').datepicker();
+    language: "pl",
+    orientation: "top left";
+  });
+</script>
+
+    <script>
+    $(document).ready(function(){
+      $("#myBtn").click(function(){
+          $("#myModal").modal();
+      });
+    });
+    </script>

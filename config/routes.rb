@@ -1,5 +1,17 @@
 Rails.application.routes.draw do
 
+  get 'pupil/profil'
+
+  get 'pupil/zadania'
+
+  get 'pupil/osiagniecia'
+
+  get 'pupil/wiadomosc'
+
+  get 'pupil/oceny'
+
+  get 'pupil/index'
+
   root 'logowanie#index'
 
   get 'parents/index'

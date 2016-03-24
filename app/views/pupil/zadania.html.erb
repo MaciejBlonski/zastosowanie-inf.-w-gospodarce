@@ -1,0 +1,132 @@
+
+<head>
+  <title>Nauczyciel</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body id="index_pupil">
+</br></br>
+
+    <div class="navbar-wrapper">
+        <div class="container-fluid">
+            <nav class="navbar navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Logo</a>
+                    </div>
+
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="/pupil/index" class="">Home</a></li>
+                            <li class="active"><a href="/pupil/zadania">Zadania</a></li>
+                            <li><a href="/pupil/osiagniecia">Osiagniecia</a></li>
+                            <li><a href="/pupil/oceny">Oceny</a></li>
+                            <li><a href="/pupil/wiadomosc">Wiadomosc</a></li>
+                            <li><a href="/pupil/profil">Profil</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav pull-right">
+
+                            <li><a>  Zalogowany jako: ....</a></li>
+                            <li class=""><a href="http://google.pl/" > Wyloguj </a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</br></br></br>
+
+
+
+  <div class="row">
+    <div class="col-sm-4" onclick="myFunction()" id="kaf">
+      <a href="#" >
+      <div class="tile purple" id="war">
+
+        <h3 class="title">Matematyka</h3>
+        <p id="text">Rozwiąż jakies zadanie :D</p>
+
+        <div id="z" style="display:none">
+
+          <script type="text/javascript", src="app/ssets/javascript/math_exercise.js"></script>
+          <script type="text/javascript", src="app/ssets/javascript/add_10.js"></script>
+
+
+
+
+<fieldset id="exerciseFrame"></fieldset>
+<fieldset id="mainFrame">
+<center>Tutaj wpisz rozwiazanie: <input type="text" id="answer"><br>
+<button onClick="return exercise.nextExercise()"> Kolejny Przyklad </button></center><br>
+</center><br>
+</fieldset>
+<br>
+<fieldset>
+<table class="TFtable" align="center">
+    <td onclick="toggle('statsTable')" style="cursor: pointer">Statystyki</td>
+</table>
+<table id="statsTable" class="TFtable" style="display:none" align="center">
+    <td></td>
+    <td>Numer</td>
+    <td>Przyklad</td>
+    <td>Twoja odpowiedz</td>
+    <td>Prawidlowa odpowiedz</td>
+</table>
+</fieldset>
+
+</div>
+
+
+
+
+
+      </div>
+      </a>
+    </div>
+
+
+    <div class="col-sm-4">
+      <div class="tile red">
+        <h3 class="title">Przyroda</h3>
+        <p>Grzybpi za tobą już się stęskniły</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="tile orange">
+        <h3 class="title">Polski</h3>
+        <p>Literki już czekają </p>
+      </div>
+    </div>
+
+  <div class="col-sm-4">
+     <div class="tile blue">
+       <h3 class="title">Sprawdz swoje Odzanaki</h3>
+
+     </div>
+  </div>
+
+</div>
+<script>
+
+  function myFunction() {
+    document.getElementById("kaf").className="col-sm-12";
+    document.getElementById("kaf").style.height = "650px";
+    document.getElementById("war").style.height = "600px";
+    document.getElementById("text").style.display = "none";
+    document.getElementById("z").style.display = "inline";
+
+    };
+
+
+
+
+</script>
