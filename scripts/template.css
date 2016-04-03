@@ -1,0 +1,18 @@
+
+/* wymiary strony */
+#exerciseDiv{width:50%; height:800px; margin:0 auto;}
+/* tresc zadania */
+#exerciseFrame{font-style: italic; font-size:300%; align:center; border: 0;}
+/* miejsce na odpowiedz i przycisk*/
+#mainFrame{font-style: italic; font-size:300%; border: 0;}
+#answer{width:60px; height: 40px; font-size: 30px; font-style: italic;}
+#checkAnswer{cursor: pointer;background-color: #4CFF00; color: black; border: 2px solid #4CAF50; border-radius: 8px; height: 40px; width: 200px;}
+/* statystyki */
+#stats{border: 0; }
+#statsTable{height:200px;overflow-y:auto; }
+.TFtable{ width:100%;text-align:center;}
+.TFtable td{ width:20%;border:#4e95f4 1px solid; }
+.TFtable tr{background: #b8d1f3;}
+.TFtable tr:nth-child(odd){background: #b8d1f3;}
+.TFtable tr:nth-child(even){background: #dae5f4;}
+
