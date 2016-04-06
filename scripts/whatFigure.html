@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="template.css" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" >
+
+<!--Tylko to modyfikować w htmlu:-->
+<script type="text/javascript", src="imgsAndStats.js"></script>
+<script type="text/javascript", src="whatFigure.js"></script>
+</head>
+<body>
+
+<div id="exerciseDiv" align="center">
+
+<fieldset id="exerciseFrame"> 
+<!--Tutaj treść zadania, ładowana poprzez skrypt-->
+</fieldset>
+<br>
+
+<fieldset id="mainFrame"> 
+<!--Skryptem nie ruszamy tego-->
+Tutaj wpisz rozwiązanie: <input type="text" id="answer">
+<button id="checkAnswer" onClick="exercise.nextExercise()"> Kolejny przykład </button> 
+</fieldset> <br>
+
+<fieldset id="stats">
+<!--Statystyki-->
+
+<table class="TFtable">
+    <td onclick="toggle('statsTable');">Statystyki</td>
+</table>
+
+<table id="statsTable" class="TFtable" style="display:none;">
+	<td></td>
+    <td>Numer</td>
+    <td>Przykład</td>
+    <td>Twoja odpowiedź</td>
+    <td>Prawidłowa odpowiedź</td>
+</table>
+
+</fieldset>
+
+</div>
+</body>
+</html>
